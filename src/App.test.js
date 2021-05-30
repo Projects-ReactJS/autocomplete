@@ -1,19 +1,18 @@
 import React from 'react';
 import App from './App';
-import { configure } from 'enzyme';
+import { render, screen } from '@testing-library/react';
+import { configure, shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
+import Autocomplete from './components/Autocomplete';
 
+describe('fetch tests', () => {
+	test('test input', () => {
+		const mockgetdata = jest.fn();
+		const wrapper = shallow(<Autocomplete items="/search" isVisible="true" getdata={mockgetdata} />);
 
+		wrapper.find('input[type="text"]').at(0);
+	});
 
-/*test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-}); */
-
-it('describes  app rendering', () => {
-expect(true).toBe(true);
-
-})
+});

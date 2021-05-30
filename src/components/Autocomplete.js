@@ -64,7 +64,7 @@ var result = evt.nativeEvent.path[1].children[1].children;
 	render() {
 		return (
 			<div className="autocomplete">
-				<input className="arrangement" type="text" name="search" value={this.state.searchTerm} onInput={this.onkeypress} onKeyDown={this.onkeyDownPress}></input>
+				<input data-testid='auto-input' className="arrangement" type="text" name="search" value={this.state.searchTerm} onInput={this.onkeypress} onKeyDown={this.onkeyDownPress}></input>
 				<List isVisible={this.state.isVisible} searchTerm={this.state.searchTerm} onclicklistitem={this.onclicklistitem}
                 cursor={this.state.cursor} 
                 getdata={this.props.getdata}></List>
