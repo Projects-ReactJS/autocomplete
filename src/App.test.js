@@ -7,8 +7,8 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 import Autocomplete from './components/Autocomplete';
 
-describe('fetch tests', () => {
-	test('test input', () => {
+describe('input tests', () => {
+	test('test input available', () => {
 		const mockgetdata = jest.fn();
 		const wrapper = shallow(<Autocomplete items="/search" isVisible="true" getdata={mockgetdata} />);
 

@@ -14,6 +14,7 @@ class App extends React.Component {
 	}
 
 	async getData(url) {
+		console.log(url);
 		let response = await fetch(url);
     return await response.json();
 	
