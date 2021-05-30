@@ -1,0 +1,10 @@
+input[type="text"]{
+    padding:1em 2em;
+    border-radius: 10px;
+    outline: none;
+  }
+  .autocomplete{
+      display: flex;
+      flex-direction: column;
+     
+  }

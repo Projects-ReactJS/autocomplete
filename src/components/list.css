@@ -1,0 +1,34 @@
+ul{
+list-style: none;
+display: flex;
+flex-direction: column;
+padding: 0px;
+text-align: left;
+margin-top:0;
+width: 73%;
+margin-left: 15%;
+border: 2px solid black;
+
+}
+li
+{
+    
+    padding: 1em 2em;
+}
+
+
+
+li:hover{
+    background-color: lightgray; 
+}
+
+.list-active{
+    visibility: visible;
+}
+.list-inactive{
+    visibility:hidden;
+}
+
+.item-active{
+    background-color: lightgray; 
+}
