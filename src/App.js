@@ -24,6 +24,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div  className="container">
+				<h1>B's Search</h1>
 				<Autocomplete items="/search" isVisible={this.state.isVisible} getdata={this.getData}></Autocomplete>
 			</div>
 		);
