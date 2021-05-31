@@ -2,6 +2,8 @@
 ## 1) Prerequisites
 Before running the application ensure whether the latest versions of npm, Yarn and Maven installed
 
+Also ensure node and Java 8 installed
+
 Ensure the ports 3000 and 4001 are available and free in local system
 
 ## 2) Clone the application
