@@ -21,4 +21,32 @@ describe('test List', () => {
         wrapper.find('ul[className="list-active"]').at(0);
       
     })
+
+    test("test on key press positive", () =>{
+
+      const evt = {
+        nativeEvent: {
+          srcElement:{value:"test"},
+          data:"test"
+        }
+      
+      };
+
+      const ac = new Autocomplete();
+      ac.onkeypress(evt);
+      
+
+    })
+
+    test("test on key press negative",()=>{
+      const evt = {
+        nativeEvent: {
+          srcElement:{value:""},
+          data:""
+        }
+      };
+      const ac = new Autocomplete();
+      ac.onkeypress(evt);
+
+    })
 })
