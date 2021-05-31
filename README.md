@@ -21,6 +21,8 @@ once the build is complete, navigate to cd target and run  ***java -jar pageSear
 
 This will run the backend server. 
 
+To check the working use http://localhost:4001/search?term=f as this would give you few details as response. 
+
 
 ## 4) Run the react frontend application
 
