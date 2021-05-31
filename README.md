@@ -1,4 +1,4 @@
-# Testing the Autocomplete Application
+# Running the Autocomplete Application Locally
 ## 1) Prerequisites
 Before running the application ensure whether the latest versions of npm, Yarn and Maven installed
 
